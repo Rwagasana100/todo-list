@@ -26,8 +26,8 @@ function renderAddtodo(tasks = myArray){
           <small>${date} | Priority: ${priority}</small>
         </div>
         <div>
-          <button class="complete-button" onclick="toggleComplete(${i})">✔</button>
-          <button class="delete-button" onclick="deleteTodo(${i})">🗑</button>
+          <button class="complete-button" onclick="toggleComplete(${i})">Done</button>
+          <button class="delete-button" onclick="deleteTodo(${i})">Delete</button>
         </div>
       </div>`;
     addToHTML += html;
