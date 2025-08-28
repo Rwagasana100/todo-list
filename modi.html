@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="modi.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>My Todo List</h1>
+    <div class="todo-input-grid">
+      <input class="js-task name-input" type="text" placeholder="Enter your task">
+      <input class="js-date" type="date">
+      <select class="js-priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button class="add-todo-button" onclick="addTodo()">Add</button>
+    </div>
+    <div class="search-bar">
+      <input class="search-input" type="text" placeholder="Search tasks..." onkeyup="searchTodo()">
+    </div>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <div class="js-display todo-grid"></div>
+  </div>
+
+  <script src="modi.js"></script>
+</body>
+</html>
